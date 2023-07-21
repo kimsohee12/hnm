@@ -99,6 +99,25 @@
             "new":true,
             "size":["S","M","L"]
 
+        },{
+            "id":10,
+            "img":"https://lp2.hm.com/hmgoepprod?set=source[/e0/2b/e02b93915c9ad54e2aed0a3976814c539038eedc.jpg],origin[dam],category[ladies_trousers_highwaisted],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]",
+            "title":"와이드 트윌 팬츠",
+            "price":15900,
+            "choice":true,
+            "new":false,
+            "size":["S","M","L"]
+
+        },
+        {
+            "id":11,
+            "img":"https://lp2.hm.com/hmgoepprod?set=source[/2b/4e/2b4e4ac1d376d5baa6bac75dc07ed31b68ce723b.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]",
+            "title":"플레어 로라이즈 진",
+            "price":29900,
+            "choice":true,
+            "new":true,
+            "size":["S","M","L"]
+
         }
         
         

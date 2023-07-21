@@ -14,7 +14,7 @@ const ProductAll = () => {
     let searchQuery = query.get('q')||""
     console.log('쿼리',searchQuery); 
     //db.json ->url
-    let url = `https://my-json-server.typicode.com/kimsohee12/hnmClone/products?q=${searchQuery}`
+    let url = `https://my-json-server.typicode.com/kimsohee12/hnm/products?q=${searchQuery}`
   axios.get(url).then((res)=>setProductList(res.data))
 }
 

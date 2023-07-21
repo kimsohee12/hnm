@@ -10,7 +10,7 @@ const ProductDetail = ({cart, setCart}) => {
 
   //클릭한 제품
   const getProductDetail=()=>{
-    let url = `https://my-json-server.typicode.com/kimsohee12/hnmClone/products/${id}`
+    let url = `https://my-json-server.typicode.com/kimsohee12/hnm/products/${id}`
     axios.get(url).then((res)=>setProduct(res.data));
 }
   

@@ -1,0 +1,443 @@
+
+/* NavBar */
+@font-face {
+  font-family: 'SUITE-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+.login-button{
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px;
+  
+}
+.logoutT{
+  text-decoration: none;
+  color: black;
+  font-family: 'SUITE-Regular';
+  padding-right: 10px;
+}
+.menu{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  flex-direction: row;
+  padding: 20px; 
+}
+.show-menu{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  flex-direction: row;
+  padding: 20px; 
+}
+.menuWoman{
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+  margin-right: 30px;
+  font-family: 'SUITE-Regular';
+}
+.menus{
+  text-decoration: none;
+  margin-right: 30px;
+  color: black;
+  font-family: 'SUITE-Regular';
+  display: flex;
+  justify-content: center;
+  
+}
+.navbarAtc{
+  display: flex;
+}
+.basket{
+  margin-right: 10px;
+  font-family: 'SUITE-Regular';
+  padding-right: 10px;
+}
+.bsBag{
+  margin-right: 10px;
+}
+.togglebtn{
+  display: none;
+}
+@media screen and (max-width:768px) {
+  .menu{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 25px;
+    
+  }
+  .menus,
+  .menuWoman{
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+  .menuWoman:hover{
+    margin-right: 0px;
+    width: 100%;
+    background-color: rgba(208, 83, 108, 0.385);
+  }
+  .togglebtn{
+    position: absolute;
+    left: 30px;
+    top: 35px;
+    color: #f50000;
+    font-size: 22px;
+    display: block;
+  }
+  
+  .show-menu{
+    border-bottom: 2px solid rgba(185, 185, 185, 0.585);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .nav-logo img{
+    position: absolute;
+    left: 44%;
+    top: 30px;
+  }
+  .menus:hover{
+    margin-right: 0px;
+    width: 100%;
+    background-color: rgba(208, 83, 108, 0.385);
+  }
+  .basket,
+  .logoutT{
+    font-size: 13px;
+    padding-right: 10px;
+    margin-right: 2px;
+  }
+  .bsBag{
+    width: 14px;
+  }
+  .faUser{
+    width: 13px;
+  }
+  .login-button{
+    margin-bottom: 10px;
+    margin-right: 8px;
+  }
+}
+
+@font-face {
+  font-family: 'KCC-Ganpan';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCC-Ganpan.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.cartNum{
+  margin-right: 30px;
+  font-family: 'KCC-Ganpan';
+  color: rgb(232, 78, 17);
+}
+.basket
+.navbarAtc span{
+  margin: 5px;
+}
+.menu li a{
+  text-decoration: none;
+  color:black;
+  margin-left:20px;
+}
+.faUser{
+  margin-top: 5px;
+  margin-right: 10px;
+}
+.text-login{
+  margin-left: 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: black;
+}
+.search-box{
+  border-bottom: 1px solid black;
+  position: absolute;
+  right: 20px;
+  padding: 5px;
+}
+.search-box input{
+  border:none;
+  margin-left:5px;
+}
+.search-box input:focus {
+  outline:none
+}
+.nav-logo{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+/* ProductCard  */
+.card{
+  border:none !important;
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  font-family: 'SUITE-Regular';
+}
+.cardImg{
+  margin-bottom: 7px;
+  width: 300px;
+}
+.card:hover{
+  transform: scale(1.1);
+}
+.choice{
+  font-size:11px;
+  color: #63786a;
+  font-weight: bold;
+  height: 20px;
+}
+.new-product {
+  font-size: 11px;
+  height: 20px;
+  color: red;
+}
+.readyBox{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.readyImg{
+  width: 600px;
+}
+.homClick{
+  width: 200px;
+  border-radius: 15px !important;
+  margin-bottom: 5%;
+}
+/* login */
+.loginBox{
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.loginBox h2{
+  margin-bottom: 50px;
+}
+.login{
+  width: 500px;
+}
+.login input{
+  height: 50px;
+  margin-bottom: 10px;
+}
+.btn.btn-primary.btn-block.mb-4{
+  width: 500px;
+  background-color: #f50000;
+  border-color: #f30000;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+.form-control:focus{
+  border-color: #bd06063a !important;
+  box-shadow: 0 0 0 0.25rem rgba(225, 45, 45, 0.25) !important;
+}
+/* detail */
+.detailBox{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.cardDetailImg{
+  width: 500px;
+  height: 740px;
+  margin-right: 50px;
+  margin-bottom: 7%;
+}
+.txtDetail{
+  margin-top: 20px;
+}
+.btn.btn-dark{
+  margin-top: 50px;
+  width: 650px;
+}
+.txtDetail div{
+  margin: 10px;
+}
+.txtDetail select{
+  margin-top: 20px;
+  width: 130px;
+  border-radius: 7px;
+}
+
+@media screen and (max-width: 1300px) {
+    /* detail */
+    .cardDetailImg{
+      width: 400px;
+      height: 600px;
+    }
+    .btn.btn-dark{
+      margin-top: 50px;
+      width: 550px;
+    }
+
+}
+@media screen and (max-width: 1100px) {
+  .btn.btn-dark{
+    width: 450px;
+  }
+}
+@media screen and (max-width: 980px) {
+  /* 로고 */
+  .nav-logo img{
+    width: 70px;
+  }
+  /*  제품 검색  */
+  .search-box{
+    width: 140px;
+  }
+  .search-box input{
+    width: 100px;
+    font-size: 15px;
+    font-family: 'SUITE-Regular';
+  }
+  /* main card Img */
+  .cardImg{
+    width: 450px;
+  }
+  /* login */
+  .loginBox{
+    margin-top: 50px;
+  }
+  .login{
+    width: 350px;
+  }
+  .login input{
+    height: 50px;
+  }
+  .btn.btn-primary.btn-block.mb-4{
+    width: 350px;
+  }
+  /* detail */
+  .cardDetailImg{
+    width: 350px;
+    height: 520px;
+    margin: 20px;
+  }
+  .btn.btn-dark{
+    width: 380px;
+  }
+  
+}
+@media screen and (max-width: 800px) {
+/* 장바구니 담은 수 */
+  .cartNum{
+    margin-right: 20px;
+    font-family: 'KCC-Ganpan';
+    color: rgb(232, 78, 17);
+  }
+  /* detail */
+  .cardDetailImg{
+    width: 270px;
+    height: 430px;
+    margin-right: 20px;
+  }
+  .btn.btn-dark{
+    width: 180px;
+  }
+}
+@media screen and (max-width: 700px) {
+
+  .cardImg{
+    width: 350px;
+  }
+}
+
+/* cart */
+.cartListBox{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cartBoxTxt{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+.cartBoxTxt p{
+  margin-top: 40px;
+}
+.cartListBox h1 {
+  margin-bottom: 50px;
+}
+.cartList{
+  margin-top: 50px;
+  width: 100%;
+  padding: 5px;
+  height: 300px;
+  border: 3px solid rgba(204, 204, 204, 0.508);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+}
+.cartList img {
+  margin: 15px;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+.cartTxtBtn{
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.cartbtn{
+  width: 200px;
+  height: 50px;
+}
+.cartbtn.btn.btn-danger{
+  width: 300px !important;
+}
+.cartTxt{
+  width: 300px;
+  margin-left: 15%;
+}
+@media screen and (max-width: 1500px) {
+  .cartBtn{
+    width: 180px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .cartBtn{
+    width: 120px;
+  }
+  .cartTxt{
+    width: 200px;
+    margin-left: 5%;
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .cartTxtBtn{
+    display: flex;
+    flex-direction:column ;
+  }
+  .cartTxt{
+    margin-bottom: 18px;
+    font-size: 14px;
+  }
+  .cartbtn.btn.btn-danger{
+    width: 180px !important;
+  }
+}

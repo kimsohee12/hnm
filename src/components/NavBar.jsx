@@ -9,7 +9,7 @@ import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
 import { authenticateAction } from '../redux/actions/authenticateAction';
 
-const NavBar = ({cart, setCart}) => {
+const NavBar = ({cart}) => {
   const authenticate = useSelector((state)=>state.auth.authenticate);
   const dispatch = useDispatch();
   const nav = useNavigate()

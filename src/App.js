@@ -33,14 +33,14 @@ useEffect(()=>{
 
   return (
     <div>
-      <NavBar authenticate ={authenticate} setAuthenticate={setAuthenticate} cart={cart} setCart ={setCart}/>
+      <NavBar cart={cart} setCart ={setCart}/>
       <br/><br/>
       <Routes>
         <Route path='/' element={<ProductAll/>}/>
         <Route path='/cart' element={<PrivateCart cart={cart} authenticate={authenticate}/>}/>
         <Route path='/preparing' element={<PreparingPage/>}/>
         <Route path='/login' element={<Login setAuthenticate={setAuthenticate}/>}/>
-        <Route path='/product/:id' element={<PrivateRouter authenticate={authenticate} cart={cart} setCart ={setCart}/>}/>
+        <Route path='/product/:id' element={<PrivateRouter cart={cart} setCart ={setCart}/>}/>
       </Routes>
     </div>
   );

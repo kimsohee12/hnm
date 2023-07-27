@@ -3,9 +3,6 @@
 //미들웨어 -> 함수를 리턴함  
 //getState :  현재 스테이트의 정보 받아오기
 
-import axios from "axios";
-import { json } from "react-router-dom";
-
 function getProducts(searchQuery){
     return async(dispatch , getState)=>{
         let url = `https://my-json-server.typicode.com/kimsohee12/hnm/products?q=${searchQuery}`

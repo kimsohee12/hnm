@@ -5,8 +5,13 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { Link, useNavigate} from 'react-router-dom';
 import { BsBag } from "react-icons/bs";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
+import { authenticateAction } from '../redux/actions/authenticateAction';
 
-const NavBar = ({authenticate, setAuthenticate ,cart, setCart}) => {
+const NavBar = ({cart, setCart}) => {
+  const authenticate = useSelector((state)=>state.auth.authenticate);
+  const dispatch = useDispatch();
   const nav = useNavigate()
   const menuList = [
     "Divided",
@@ -18,6 +23,7 @@ const NavBar = ({authenticate, setAuthenticate ,cart, setCart}) => {
     "지속가능성",
   ];
   const [isActive, setIsActive] = useState(false);
+  
 
   const toggleBtn=()=>{
     setIsActive(prevState => !prevState);
@@ -52,7 +58,7 @@ const NavBar = ({authenticate, setAuthenticate ,cart, setCart}) => {
                 </div>
               )
               : ""}
-            <div onClick={() => setAuthenticate(false)}>
+            <div onClick={() => dispatch(authenticateAction.logout())}>
             <FontAwesomeIcon icon={faUser} className='faUser'/>
               <a  href ="/" className ='logoutT' style={{ cursor: "pointer" }}>로그아웃</a>
             </div>

@@ -4,23 +4,32 @@ import axios from 'axios';
 import ProductCard from '../components/ProductCard';
 import{Container, Row,Col} from 'react-bootstrap'
 import { useSearchParams } from 'react-router-dom';
+import {productActin} from '../redux/actions/productAction';
+import { useDispatch, useSelector } from 'react-redux';
+
 const ProductAll = () => {
-  const [productList,setProductList]=useState([]);
+//combineReducer 를 사용 하면 state=>state.productList 가 아닌
+//state=>state.product.productList 이렇게 써줘야함
+const productList = useSelector((state)=>state.product.productList)
+  //const [productList,setProductList]=useState([]);
   const [query, setQuery] = useSearchParams();
-  // const [productSearch,setProductSearch]=useState(null)
+  const dispatch = useDispatch();
 
   //전체 상품 가져오기
   const getProducts=()=>{
     let searchQuery = query.get('q')||""
     console.log('쿼리',searchQuery); 
-    //db.json ->url
-    let url = `https://my-json-server.typicode.com/kimsohee12/hnm/products?q=${searchQuery}`
-  axios.get(url).then((res)=>setProductList(res.data))
+    //dispatch에서 바로 store로 가는게 아닌 함수 이용 ! 
+    //미들웨어 함수로 만들어논 getProducts를 거쳐서 감 
+    //getProducts에 searchQuery 값을 매개변수로 넘겨주기 
+    dispatch(productActin.getProducts(searchQuery))
+  
 }
 
   useEffect(()=>{
     getProducts()
   },[query])
+
   return (
     <div>
       <Container>

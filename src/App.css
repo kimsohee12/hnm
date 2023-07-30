@@ -136,12 +136,12 @@
   }
   .basket,
   .logoutT{
-    font-size: 12px;
+    font-size: 11px;
     padding-right: 10px;
     margin-right: 2px;
   }
   .bsBag{
-    width: 14px;
+    width: 12px;
   }
   .faUser{
     width: 13px;
@@ -160,7 +160,7 @@
 }
 
 .cartNum{
-  margin-right: 30px;
+  margin-right: 25px;
   font-family: 'KCC-Ganpan';
   color: rgb(232, 78, 17);
 }
@@ -416,7 +416,7 @@
     margin: 20px;
   }
   .btn.btn-dark{
-    width: 380px;
+    width: 370px;
   }
 
   
@@ -424,18 +424,20 @@
 @media screen and (max-width: 800px) {
 /* 장바구니 담은 수 */
   .cartNum{
-    margin-right: 20px;
-    font-family: 'KCC-Ganpan';
-    color: rgb(232, 78, 17);
+    font-size: 2px !important;
+    margin-right: 35px;
   }
   /* detail */
+  .nav-logo img{
+    width: 60px;
+  }
   .cardDetailImg{
-    width: 270px;
-    height: 430px;
+    width: 250px;
+    height: 400px;
     margin-right: 20px;
   }
   .btn.btn-dark{
-    width: 180px;
+    width: 160px;
   }
   .magazine_card{
     display: flex;
@@ -452,9 +454,8 @@
   }
   .basket,
   .logoutT{
-    font-size: 10px;
+    font-size: 16px;
     padding-right: 8px;
-    margin-right: 2px;
   }
   .bsBag{
     width: 10px;
@@ -472,6 +473,44 @@
   .btn.btn-dark{
     margin-top: 50px;
     width: 160px;
+  }
+  .txtDetail div{
+    margin: 10px;
+  }
+  .txtDetail select{
+    margin-top: 20px;
+    width: 130px;
+    border-radius: 7px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .nav-logo img{
+    width: 50px;
+  }
+  .cardImg{
+    width: 200px;
+  }
+  .basket,
+  .logoutT{
+    font-size: 12px;
+    padding-right: 8px;
+  }
+  .bsBag{
+    width: 10px;
+  }
+  .faUser{
+    width: 9px;
+  }
+  .cardDetailImg{
+    width: 180px !;
+    height: 350px;
+  }
+  .txtDetail{
+    font-size: 12px;
+  }
+  .btn.btn-dark{
+    margin-top: 50px;
+    width: 100px;
   }
   .txtDetail div{
     margin: 10px;

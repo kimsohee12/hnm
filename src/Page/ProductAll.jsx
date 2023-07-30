@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { useEffect } from 'react'
-import axios from 'axios';
 import ProductCard from '../components/ProductCard';
 import{Container, Row,Col} from 'react-bootstrap'
 import { useSearchParams } from 'react-router-dom';
@@ -32,6 +31,7 @@ const productList = useSelector((state)=>state.product.productList)
 
   return (
     <div>
+      
       <Container>
         <Row>
           {productList.map((menu,index)=>(

@@ -8,8 +8,12 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
 import { authenticateAction } from '../redux/actions/authenticateAction';
+import { type } from '@testing-library/user-event/dist/type';
 
 const NavBar = ({cart}) => {
+
+  const [menuClick,setMenuClick] = useState('');
+
   const authenticate = useSelector((state)=>state.auth.authenticate);
   const dispatch = useDispatch();
   const nav = useNavigate()
@@ -25,6 +29,7 @@ const NavBar = ({cart}) => {
   const [isActive, setIsActive] = useState(false);
   
 
+
   const toggleBtn=()=>{
     setIsActive(prevState => !prevState);
   }
@@ -37,6 +42,7 @@ const NavBar = ({cart}) => {
       //url 바꿔주기
       nav(`/?q=${keyword}`)
       input.value=null
+      setMenuClick('clickMenuW')
       
     }
   }
@@ -77,15 +83,16 @@ const NavBar = ({cart}) => {
             <img
               width={100}
               src="https://logos-world.net/wp-content/uploads/2020/04/HM-Logo-1999-present.jpg"
+              onClick={()=>{setMenuClick('')}}
             />
           </Link>
         </div>
           {/* 메뉴 */}
         <div className={isActive?"show-menu":"menu"}>
-        <Link to="/"className='menuWoman' >여성</Link>
+        <Link to="/woman"className={menuClick==='clickMenuW'? 'clickMenuW': 'menuWoman'} onClick={()=>{setMenuClick('clickMenuW')}} >여성</Link>
           {menuList.map((menu, index) => (
             
-              <Link to="/preparing" key={index} className='menus'>
+              <Link to="/preparing" key={index} className={menuClick==`clickMenu${index}`? `clickMenu${index}`: 'menus'} onClick={()=>{setMenuClick(`clickMenu${index}`)}}>
                 {menu}
               </Link>
           ))}

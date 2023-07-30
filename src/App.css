@@ -51,6 +51,30 @@
   justify-content: center;
   
 }
+.clickMenu0,
+.clickMenu1,
+.clickMenu2,
+.clickMenu3,
+.clickMenu4,
+.clickMenu5,
+.clickMenu6{
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+  margin-right: 30px;
+  font-family: 'SUITE-Regular';
+  color: #f50000;
+}
+.clickMenuW{
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+  margin-right: 30px;
+  font-family: 'SUITE-Regular';
+  color: #f50000;
+}
 .navbarAtc{
   display: flex;
 }
@@ -177,7 +201,65 @@
   justify-content: center;
   margin-bottom: 20px;
 }
+/* main */
+
+.discountTxt{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.discountTxt_container {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 20px;
+  height: 100px;
+  background: #efe4ce;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.discountTxt_container h1{
+  font-size: 22px;
+  color: rgb(32, 32, 32);
+}
+.discountTxtBox{
+  text-decoration: none;
+}
+.discountTxt2_container img{
+  position: relative;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 20px;
+  display: block;
+  width: 80%;
+  height: 700px;
+  object-fit: cover;
+  background: gray;
+}
+.card_container{
+  background: #f0e8d8;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card_containerTxt{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.magazine_card{
+  display: flex;
+}
+.mCard{
+  margin-left: 20px !important;
+}
 /* ProductCard  */
+
 .card{
   border:none !important;
   margin-top: 70px;
@@ -189,7 +271,7 @@
 }
 .cardImg{
   margin-bottom: 7px;
-  width: 300px;
+  width: 250px;
 }
 .card:hover{
   transform: scale(1.1);
@@ -292,8 +374,11 @@
   .btn.btn-dark{
     width: 450px;
   }
+  .mCard{
+    width: 230px !important;
+  }
 }
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 970px) {
   /* 로고 */
   .nav-logo img{
     width: 70px;
@@ -333,6 +418,7 @@
   .btn.btn-dark{
     width: 380px;
   }
+
   
 }
 @media screen and (max-width: 800px) {
@@ -350,6 +436,13 @@
   }
   .btn.btn-dark{
     width: 180px;
+  }
+  .magazine_card{
+    display: flex;
+    flex-direction: column;
+  }
+  .mCard{
+    width: 300px !important;
   }
 }
 @media screen and (max-width: 680px) {

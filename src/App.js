@@ -8,6 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { useEffect, useState } from 'react';
 import PrivateRouter from './route/PrivateRouter';
 import PreparingPage from './Page/PreparingPage';
+import Main from './Page/Main';
 
 function App() {
 
@@ -36,10 +37,12 @@ useEffect(()=>{
       <NavBar cart={cart} setCart ={setCart}/>
       <br/><br/>
       <Routes>
-        <Route path='/' element={<ProductAll/>}/>
-        <Route path='/cart' element={<PrivateCart cart={cart} authenticate={authenticate}/>}/>
+        
+        <Route path='/' element={<Main/>}/>
+        <Route path='/woman' element={<ProductAll/>}/>
+        <Route path='/cart' element={<PrivateCart cart={cart}/>}/>
         <Route path='/preparing' element={<PreparingPage/>}/>
-        <Route path='/login' element={<Login setAuthenticate={setAuthenticate}/>}/>
+        <Route path='/login' element={<Login/>}/>
         <Route path='/product/:id' element={<PrivateRouter cart={cart} setCart ={setCart}/>}/>
       </Routes>
     </div>

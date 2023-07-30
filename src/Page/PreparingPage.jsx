@@ -10,7 +10,6 @@ const PreparingPage = () => {
   return (
     <div className='readyBox'>
         <img src='https://www.mobifren.com/resource/img/common/ready.gif' className='readyImg'></img>
-        <Button variant="danger" onClick={homClick} className='homClick'>홈으로 돌아가기</Button>
         <br/>
     </div>
   )

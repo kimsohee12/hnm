@@ -59,7 +59,6 @@ const Main = () => {
                 </Card>
             </div>
         </div>
-        <Footer/>
         
     </div>
   )

@@ -45,6 +45,8 @@ useEffect(()=>{
         <Route path='/login' element={<Login/>}/>
         <Route path='/product/:id' element={<PrivateRouter cart={cart} setCart ={setCart}/>}/>
       </Routes>
+      <Footer/>
+
     </div>
   );
 }

@@ -9,6 +9,7 @@ import { useEffect, useState } from 'react';
 import PrivateRouter from './route/PrivateRouter';
 import PreparingPage from './Page/PreparingPage';
 import Main from './Page/Main';
+import Footer from './Page/Footer';
 
 function App() {
 

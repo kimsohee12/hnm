@@ -59,4 +59,4 @@ JSON-Server 및 redux를 활용하여 만든 쇼핑몰페이지 clon coding
     
   
 # 📌DEMO URL
-[https://react-netflix-weld.vercel.app/](https://hnm.vercel.app/)https://hnm.vercel.app/
+https://hnm.vercel.app/
